@@ -38,4 +38,4 @@ class Colored:
         return self.str
 
     def __format__(self, format_spec):
-        return self.prefix + format(self.obj, format_spec).rstrip('0') + ("%" if self.is_percentage else "") + self.suffix
+        return self.prefix + format(self.obj, format_spec) + ("%" if self.is_percentage else "") + self.suffix
